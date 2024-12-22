@@ -11,6 +11,12 @@ body {
     margin: 0;
     padding: 0;
     display:flexbox;
+    transition: transform 0.3s;
+}
+
+.body img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 header {
@@ -77,6 +83,7 @@ header nav {
     margin: 0.5rem 0;
     display: block;
     padding: 10px;
+    transition: all 0.3s ease;
 }
 
 .menu ul li a {
@@ -89,6 +96,8 @@ header nav {
     color: white;
     transition: 0.5s;
     text-decoration: none;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 nav {
