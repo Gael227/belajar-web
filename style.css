@@ -16,7 +16,7 @@ body {
 header {
     background-image: url(img/screengrabs-and-wallpapers-v0-vr3l8e7d1wsd1.png);
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     padding: 2rem 0;
     position: relative;
@@ -70,18 +70,27 @@ header nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    color: white;
 }
 
 .menu ul li {
     margin: 0.5rem 0;
+    display: block;
+    padding: 10px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 .menu ul li:hover {
-    background-color: #007BFF;
+    background-color: #333;
     color: white;
-    transform: translateX(5px);
+    transition: 0.5s;
     text-decoration: none;
 }
+
 nav {
     background-color: gray;
     padding: 0px;
