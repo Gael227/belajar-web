@@ -82,3 +82,28 @@ header nav {
     transform: translateX(5px);
     text-decoration: none;
 }
+nav {
+    background-color: gray;
+    padding: 0px;
+  }
+  nav ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  nav li {
+    display: inline;
+    margin: 0%;
+    padding: 0;
+    float: left;
+  }
+  nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 16px;
+  }
+  nav li a:hover {
+    background-color: #333;
+    transition: 0.5s;
+  }
