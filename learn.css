@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
+  body {
+    background-color: #f1f1f1;
+  }
   header {
     background-color: #333;
     text-align: center;
@@ -19,6 +22,7 @@
     background-color: gray;
     padding: 10px;
     text-align: center;
+    color: white;
   }
   nav {
     background-color: gray;
@@ -30,8 +34,8 @@
   }
   nav li {
     display: inline;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     float: left;
   }
   nav li a {
@@ -39,11 +43,12 @@
     text-decoration: none;
     display: block;
     text-align: center;
-    padding: 16px;
+    padding: 10px;
+    transition: all 0.3s ease;
   }
   nav li a:hover {
     background-color: #333;
-    transition: 0.5s;
+    transition: 0.3s;
   }
   .regis {
     float: right;
@@ -68,5 +73,31 @@
 form {
     background-color: #f1f1f1;
     padding: 20px;
-    
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: gray;
+  transition: 0.5s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+form input {
+  border-radius: 5px;
+  padding: 10px;
 }
