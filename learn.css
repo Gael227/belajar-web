@@ -55,10 +55,13 @@
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    transition: all 0.3s ease;
   }
   article button:hover {
     background-color: gray;
     transition: 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
   }
 
 

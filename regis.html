@@ -4,33 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registrasi</title>
-    <link rel="stylesheet" href="learn.css">
+    <link rel="stylesheet" href="learn.css" />
   </head>
   <body>
     <header>
-        <h1>ini judul halaman</h1>
-      </header>
-      <nav>
-        <ul>
-          <li><a href="learn.html">beranda</a></li>
-          <li><a href="">menu</a></li>
-          <li><a href="">tentang kami</a></li>
-          <li class="regis"><a href="">Register</a></li>
-        </ul>
-      </nav>
-    <form action="regis.php" method="post" class="form">
-    <h1>Registrer</h1>
+      <h1>ini judul halaman</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="learn.html">beranda</a></li>
+        <li><a href="">menu</a></li>
+        <li><a href="">tentang kami</a></li>
+        <li class="regis"><a href="">Register</a></li>
+      </ul>
+    </nav>
+    <form method="get" class="registrasi" action="receive.html">
+      <h1>Registrer</h1>
       <label for="username">Username</label>
       <input type="text" name="username" id="username" />
       <br />
       <label for="password">Password</label>
       <input type="password" name="password" id="password" />
       <br />
+      <label for="telepon">Phone Number</label>
+      <input type="tel" name="telepon" id="telepon" value="+62" />
+      <br />
       <label for="email">Email</label>
       <input type="email" name="email" id="email" />
       <br />
-      <button type="submit">Register</button>
+      <input type="submit" value="Register" />
+      <input type="reset" value="Reset" />
+      <br />
 
-      <footer>Gael All rights reserved. 2024</footer>
+      Gender: <br />
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+    </form>
+    <footer>Gael All rights reserved. 2024</footer>
   </body>
 </html>
