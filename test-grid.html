@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tes Grid</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        margin: 0;
+        display: grid;
+        grid-template-columns: [cline1]100px [cline2]auto [cline3]100px [cline4];
+        grid-template-rows: [rline1]50px [rline2]auto [rline3]400px [rline4]200px [rline5];
+      }
+      .header {
+        background-color: #30393e;
+        color: white;
+        grid-column-start: cline1;
+        grid-column-end: cline4;
+        grid-row-start: rline1;
+        grid-row-end: rline3;
+        margin: 0;
+      }
+      .content {
+        background-color: #988f88;
+        color: white;
+        grid-column-start: cline1;
+        grid-column-end: cline4;
+        grid-row-start: rline3;
+        grid-row-end: rline4;
+      }
+      .footer {
+        background-color: #f8e5d7;
+        grid-column-start: cline1;
+        grid-column-end: cline4;
+        grid-row-start: rline4;
+        grid-row-end: rline5;
+      }
+      .sidebar {
+        background-color: #f8bd97;
+        grid-column-start: cline1;
+        grid-column-end: cline2;
+        grid-row-start: rline3;
+        grid-row-end: rline4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>NEW TEXT</h1>
+      </div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quam
+          aspernatur ratione ipsam non odio alias ad vitae quo saepe tenetur
+          hic, facere ipsa laboriosam voluptate facilis impedit cum laborum?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae
+          nisi facere error omnis nam laudantium, architecto earum incidunt et.
+          Dolorem labore veritatis blanditiis dignissimos eligendi, incidunt
+          tempora quia? Totam.
+        </p>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li>menu1</li>
+          <li>menu2</li>
+          <li>menu3</li>
+          <li>menu4</li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h4>new text copyright 2025</h4>
+      </div>
+    </div>
+  </body>
+</html>
