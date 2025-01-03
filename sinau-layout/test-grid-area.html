@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Area</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: calisto mt;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 100px auto 100px;
+        grid-template-rows: 50px auto 50px;
+        grid-template-areas:
+          "header header header"
+          ". content ."
+          "footer footer footer";
+      }
+      .header {
+        grid-area: header;
+        color: aliceblue;
+        background-color: #754e1a;
+        text-align: center;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: #cba35c;
+      }
+      .content {
+        grid-area: content;
+        background-color: #f8e1b7;
+        text-align: center;
+        font-size: 32px;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: #754e1a;
+        color: aliceblue;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>NEW TEXT</h1>
+      </div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+          necessitatibus, nam fuga esse repellendus minus non quos neque
+          doloremque, vero iusto, nesciunt est! Earum reiciendis consequuntur
+          dolore rerum itaque voluptas?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+          consequuntur suscipit autem natus iste reprehenderit est laboriosam
+          impedit, sed eos, repellat, sint consequatur accusamus commodi? Sint
+          minus assumenda pariatur non.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          neque commodi eaque corporis quidem accusamus minus facere,
+          repudiandae est, voluptatem distinctio omnis dolore, totam
+          perspiciatis quia nostrum beatae nulla consectetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          neque commodi eaque corporis quidem accusamus minus facere,
+          repudiandae est, voluptatem distinctio omnis dolore, totam
+          perspiciatis quia nostrum beatae nulla consectetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          neque commodi eaque corporis quidem accusamus minus facere,
+          repudiandae est, voluptatem distinctio omnis dolore, totam
+          perspiciatis quia nostrum beatae nulla consectetur.
+        </p>
+      </div>
+      <!-- <div class="sidebar">
+        <ul>
+          <li>menu1</li>
+          <li>menu2</li>
+          <li>menu3</li>
+          <li>menu4</li>
+        </ul>
+      </div> -->
+      <div class="footer">
+        <h3>ini footer</h3>
+      </div>
+    </div>
+  </body>
+</html>
